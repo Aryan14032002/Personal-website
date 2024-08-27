@@ -1,0 +1,447 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background: black;
+    color: white;
+}
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(mainimage.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#container {
+    padding-left: 10%;
+    padding-top: 10px;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo {
+    width: 150px;
+}
+nav ul {
+    padding-left: 0;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a {
+    color: aqua;
+    text-decoration: none;
+    font-size: 15px;
+    position: relative;
+}
+nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: rgb(199, 3, 196);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+}
+nav ul li a:hover::after {
+    width: 100%;
+}
+.header {
+    margin-top: 210px;
+    font-size: 20px;
+}
+.header h1 {
+    font-size: 50px;
+    margin-top: 10px;
+}
+.header h1 span {
+    color: red;
+}
+
+/*__________________________ ABOUT___________________________ */
+#about {
+    padding: 60px 40px;
+    color: lightgrey;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.column-1 {
+    flex-basis: 30%;
+}
+.column-1 img {
+    width: 100%;
+    height: 500px;
+    border-radius: 30px;
+}
+.column-2 {
+    flex-basis: 65%;
+}
+.Intro {
+    font-size: 40px;
+    color: whitesmoke;
+    font-weight: 500;
+}
+.justify {
+    text-align: justify;
+    color: red;
+    font-size: 20px;
+}
+.tab-titles {
+    display: flex;
+    margin: 20px 0px 40px;
+}
+.tab-links {
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after {
+    content: '';
+    width: 0px;
+    height: 3px;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after {
+    width: 50%;
+}
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span {
+    color: red;
+    font-size: 15px;
+}
+.tab-contents {
+    display: none;
+}
+.tab-contents.first {
+    display: block;
+}
+.Intros {
+    font-size: 40px;
+    color: whitesmoke;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+/* _________________________services__________________ */
+#services {
+    padding: 40px 0;
+}
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.services-list div {
+    background: rgb(17, 16, 16);
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+    border-radius: 50px;
+    transition: background 1s, transform 1s;
+}
+.services-list div i {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.services-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.services-list div a {
+    text-decoration: none;
+    color: blue;
+    font-size: 15px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.services-list div:hover {
+    background: #ff004f; 
+    transform: translateY(-15px);
+    transition: transform 0.3s ease, background 0.3s ease;  
+}
+.justifi {
+    text-align: justify;
+    color: rgb(167, 165, 165);
+    font-size: 20px;
+}
+
+/*__________________MY works____________________*/
+#portfolio {
+    padding-left: 40px;
+    padding-top: 50px;
+}
+.Title {
+    font-size: 40px;
+    color: whitesmoke;
+    font-weight: 500;
+}
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work {
+    position: relative;
+    overflow: hidden;
+}
+.work img {
+    width: 90%;
+    border-radius: 20px;
+    display: block;
+    transition: transform 1s;
+}
+.layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    text-align: justify;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    transition: height 1s;
+}
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a {
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 50px;
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+    text-align: center;
+}
+.work:hover img {
+    transform: scale(1.5);
+}
+.work:hover .layer {
+    height: 100%;
+    width: 100%;
+}
+
+/* _________________________________contact________________________ */
+#contact {
+    padding-left: 40px;
+    padding-top: 50px;
+    padding-right: 40px;
+}
+.Sub-title {
+    font-size: 40px;
+    color: whitesmoke;
+    font-weight: 500;
+}
+.contact-left {
+    flex-basis: 35%;
+}
+.contact-right {
+    flex-basis: 60%;
+}
+.contact-left p {
+    margin-top: 20px;
+}
+.contact-left p i {
+    color: #ff004f;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.social-acc {
+    margin-top: 30px;
+}
+.social-acc a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 20px;
+    color: grey;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-acc a:hover {
+    color: #ff004f;
+    transform: translateY(-10px);
+}
+.btn {
+    display: block;
+    margin: 50px 0 0 0;
+    width: fit-content;
+    border: 2px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 10px;
+    background-color: #ff004f;
+    cursor: pointer;
+}
+.contact-right form {
+    width: 100%;
+}
+form input, form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: rgb(77, 77, 77);
+    padding: 10px;
+    margin: 15px 0px;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+}
+form .btn1 {
+    display: block;
+    margin: 50px auto 0 0; 
+    cursor: pointer;
+}
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+    background: rgb(8, 8, 8);
+    font-weight: 300;
+    margin-top: 20px;
+}
+@media (max-width: 768px) {
+
+    #header {
+        height: 60vh; 
+        background-position: top center; 
+    }
+    .header {
+        margin-top: 100px; 
+        font-size: 18px;
+    }
+    .header h1 {
+        font-size: 36px; 
+    }
+    nav {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+    nav ul {
+        padding-left: 0;
+    }
+    nav ul li {
+        display: block;
+        margin: 10px 0; 
+    }
+    #about {
+        padding: 30px 20px; 
+    }
+    .column-1 img {
+        height: 300px; 
+    }
+    .column-2 {
+        flex-basis: 100%; 
+        margin-top: 20px;
+    }
+    .tab-titles {
+        flex-direction: column; 
+    }
+    .tab-links {
+        margin: 10px 0; 
+    }
+    #services {
+        padding: 30px 10px; 
+    }
+    .services-list {
+        grid-template-columns: 1fr; 
+        margin: 0; 
+    }
+    .services-list div {
+        padding: 20px; 
+    }
+    #portfolio {
+        padding-left: 10px; 
+    }
+    .work-list {
+        grid-template-columns: 1fr; 
+    }
+    .work img {
+        width: 100%; 
+    }
+    #contact {
+        padding-left: 10px; 
+        padding-right: 10px; 
+    }
+    .contact-left, .contact-right {
+        flex-basis: 100%; 
+        margin-bottom: 30px;
+    }
+    .social-acc a {
+        font-size: 24px;
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 28px; 
+    }
+    nav ul li {
+        margin: 5px 0; 
+    }
+    .column-1 img {
+        height: 200px; 
+    }
+    .Intro, .justify {
+        font-size: 18px; 
+    }
+    .services-list div {
+        padding: 10px; 
+    }
+    .work img {
+        height: auto;
+    }
+    .contact-left p {
+        font-size: 16px; 
+    }
+    form input, form textarea {
+        font-size: 16px; 
+    }
+    .btn, .btn1 {
+        padding: 12px 30px; 
+    }
+}
+#msg{
+    color: red;
+    margin-top: 10px;
+    display: block;
+}

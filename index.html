@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="https://kit.fontawesome.com/fa0c236670.js" crossorigin="anonymous"></script>
+      
+</head>
+<body>
+<div id="header">
+    <div id="container">
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header">
+            <h1>Hi, I'm <span>Aryan Kumar</span></h1>
+            <p>Fullstack Developer</p>
+        </div>
+    </div>
+</div>
+
+<!-- ______________________about_______________________ -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="column-1">
+                <img src="profile photo.png" >
+            </div>
+            <div class="column-2">
+                <h1 class="Intro">About Me</h1>
+                <p class="justify"> Aryan Kumar
+                    Based in New Delhi, I am completing my B.Tech/B.E. in Computer Science at SRM Institute of Science and Technology, 
+                    NCR Campus, Ghaziabad, in June 2024 (CGPA 8.65/10).
+                    My projects include an Amazon clone and a My Art Gallery website. I am certified in Programming with Python.
+                    I scored 64.2% in XIIth CBSE (2020) and 72.0% in Xth CBSE (2018).
+                    I developed strong communication skills and participated in various extracurricular activities during my schooling.
+                    I enjoy creating art and listening to music. I am a quick learner, always aiming to improve from past experiences.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link"onclick="opentab(skills)">Skills</p>
+                    <p class="tab-links"onclick="opentab(experience)">Experience</p>
+                    <p class="tab-links"onclick="opentab(education)">Education</p>
+                </div>
+                <div class="tab-contents first" id="skills">
+                    <ul>
+                        <li><span>Python</span><br>Full Stack</li>
+                        <li><span>HTML, CSS, Java script</span><br>Front End</li>
+                        <li><span>SQL</span><br>DBA</li>
+                        <li><span>JDE CNC and JDE DEV</span><br>ERP</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Infinevo Cloud</span><br>Trainee<br>June 2024 - Aug 2024</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Class 10</span><br>2017-18</li>
+                        <li><span>Class 12</span><br>2019-20</li>
+                        <li><span>B.tech</span><br>2020-24</li>
+                    </ul>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- _________________Services_________________ -->
+
+<div id="services">
+    <div class="container">
+        <h1 class="Intros"> My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p class="justifi">I craft visually appealing and user-friendly websites using modern HTML, CSS, and JavaScript. My designs focus on responsive layouts and intuitive navigation to enhance the user experience across all devices.</p>
+            </div>
+            <div>
+                <i class="fa-brands fa-codepen"></i>
+                <h2>UI/UX Design</h2>
+                <p class="justifi">I design intuitive user interfaces and engaging user experiences. By focusing on user behavior and modern design principles, I create layouts that are both visually appealing and easy to navigate, enhancing overall user satisfaction.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--_________________________Portfolio__________________________-->
+<div id="portfolio">
+    <div class="containeer">
+        <h1 class="Title">My works</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Leonardo_Phoenix_A_modern_online_shopping_website_image_featur_2.jpg">
+                <div class="layer">
+                    <h3>Amazon Clone</h3>
+                    <p>Developed a static Amazon clone frontend using HTML and CSS with product listings and shopping cart functionality.</p>
+                    <a href="https://aryan14032002.github.io/Amazon-clone/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Leonardo_Phoenix_A_minimalist_modern_digital_illustration_of_a_1.jpg ">
+                <div class="layer">
+                    <h3>Personal Website</h3>
+                    <p>Created a dynamic personal portfolio website to showcase my journey, utilizing HTML, CSS, and JavaScript.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src=" Leonardo_Phoenix_A_sleek_modern_digital_illustration_of_a_lapt_2.jpg">
+                <div class="layer">
+                    <h3>Art Store</h3>
+                    <p>Developed a frontend art store website featuring product displays and shopping functionality using Python(streamlit), HTML, CSS, and JavaScript.</p>
+                    <a href="https://gallerycraft-hgswt9h5qhtr7cmubtzncv.streamlit.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--________________________contact____________________ -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="Sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;&nbsp;9304264007</p>
+                <p><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;&nbsp;aryan10kumar11@gmail.com</p>
+                <div class="social-acc">
+                    <a href="https://www.facebook.com/profile.php?id=100044592585213"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://x.com/aryan10kumar11?s=09"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/a_.r_.y_.a_.n._/profilecard/?igsh=azM2aWEyOHJiZGx1"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/aryan-kumar-57b658194?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="WhatsApp Image 2024-08-26 at 22.48.40_a36667e0.jpg" download class="btn">Download Cv</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <!-- <input type="email" name="Email" placeholder="Your Email" required> -->
+                    <textarea name="Message" rows="6" placeholder="Your Email id and your Message"></textarea>
+                    <button type="Submit" class="btn btn1">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &nbsp;<i class="fa-regular fa-copyright"></i> &nbsp;Aryan. Made with&nbsp;<i class="fa-solid fa-heart"></i>&nbsp;by Aryan kumar</p>
+    </div>
+</div>
+<!-- _________________Java Script___________________ -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname, event) {
+            for (var tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (var tabcontent of tabcontents) {
+                tabcontent.classList.remove("first");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("first");
+        }
+        for (var i = 0; i < tablinks.length; i++) {
+            tablinks[i].addEventListener("click", function(event) {
+                opentab(this.getAttribute('onclick').split('(')[1].split(')')[0], event);
+            });
+        }
+    });
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw0L_0szjr04L1mEuMZg6SjuoAMZsPkOJNbqRj70Frm_SbltH6VfuXRxXxK5gmwmXDZ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },2000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
